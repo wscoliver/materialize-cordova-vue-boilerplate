@@ -1,5 +1,7 @@
 'use strict';
 
+require('babel-polyfill');
+
 var _vue = require('vue/dist/vue.js');
 
 var _vue2 = _interopRequireDefault(_vue);
@@ -33,9 +35,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // State Management with Vuex
 
 // Main App Container
+// index.js
 _vue2.default.use(_vueRouter2.default);
 // Import HTTP Library
-// index.js
 
 _vue2.default.prototype.$http = _axios2.default;
 _vue2.default.prototype.$touch = _hammerjs2.default;

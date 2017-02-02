@@ -1,4 +1,5 @@
 // index.js
+import 'babel-polyfill'
 import Vue from 'vue/dist/vue.js'
 import VueRouter from 'vue-router'
 // Import HTTP Library

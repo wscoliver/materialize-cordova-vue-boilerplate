@@ -8,7 +8,8 @@
   bottom-navigation-bar
 </template>
 <style lang="stylus">
-
+#app
+  width 100%
 </style>
 <script>
 import TopNavigationBar from './TopNavigationBar.vue'

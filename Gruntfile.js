@@ -3,7 +3,10 @@ module.exports = function(grunt){
     babel: {
       options: {
         sourceMap: true,
-        presets: ['es2015']
+        presets: ['es2015'],
+        plugins: [
+          "transform-runtime"
+        ]
       },
       dist: {
         files: {
@@ -30,7 +33,11 @@ module.exports = function(grunt){
         },
         options: {
           transform: [
-            ['babelify',{"presets":["es2015"]}],
+            ['babelify',{
+                "presets": ["es2015"],
+                "plugins":["transform-runtime"]
+              }
+            ],
             'vueify'
           ],
         },
