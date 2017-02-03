@@ -21,6 +21,7 @@ nav.g-12.bapp-bar.bottom-bar
 .bottom-bar
   position absolute
   bottom 0
+  
 .bottom-bar-inner
   width 100%
   margin 0
