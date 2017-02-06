@@ -42,11 +42,10 @@ p.center-text
   margin-top 20px
   text-align center
 #menu-display
-  max-height 70%
-  overflow-y scroll
-  overflow-x hidden
+  max-width 200%
 #menu-display .tile
   max-width 70%
+  margin 0
 </style>
 <script>
 import u from 'umbrellajs'

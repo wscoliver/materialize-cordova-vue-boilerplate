@@ -29349,7 +29349,7 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   }
 })()}
 },{"umbrellajs":393,"vue":397,"vue-hot-reload-api":394,"vueify/lib/insert-css":398}],402:[function(require,module,exports){
-var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("#search-field {\n  width: 100%;\n  margin-bottom: 20px;\n  margin-top: 10px;\n  color: #fff;\n  font-size: 4rem;\n  text-align: center;\n  border: none;\n}\n#search-field::-webkit-input-placeholder {\n  color: #fff;\n}\np.center-text {\n  margin-bottom: 0px;\n  margin-top: 20px;\n  text-align: center;\n}\n#menu-display {\n  max-height: 70%;\n  overflow-y: scroll;\n  overflow-x: hidden;\n}\n#menu-display .tile {\n  max-width: 70%;\n}")
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("#search-field {\n  width: 100%;\n  margin-bottom: 20px;\n  margin-top: 10px;\n  color: #fff;\n  font-size: 4rem;\n  text-align: center;\n  border: none;\n}\n#search-field::-webkit-input-placeholder {\n  color: #fff;\n}\np.center-text {\n  margin-bottom: 0px;\n  margin-top: 20px;\n  text-align: center;\n}\n#menu-display {\n  max-width: 200%;\n}\n#menu-display .tile {\n  max-width: 70%;\n  margin: 0;\n}")
 ;(function(){
 'use strict';
 
