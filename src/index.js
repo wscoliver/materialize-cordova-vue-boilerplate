@@ -23,7 +23,6 @@ let router = new VueRouter({
     { path: '/', component: Home }
   ]
 })
-
 new Vue({
   el: '#app',
   store,
