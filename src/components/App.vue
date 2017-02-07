@@ -10,6 +10,10 @@
 <style lang="stylus">
 #app
   width 100%
+::-webkit-scrollbar
+  width 0px
+  background transparent
+ 
 </style>
 <script>
 import TopNavigationBar from './TopNavigationBar.vue'

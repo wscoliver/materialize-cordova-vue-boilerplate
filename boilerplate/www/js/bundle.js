@@ -29238,7 +29238,7 @@ return index;
 
 })));
 },{}],400:[function(require,module,exports){
-var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("#app {\n  width: 100%;\n}")
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("#app {\n  width: 100%;\n}\n::-webkit-scrollbar {\n  width: 0px;\n  background: transparent;\n}")
 ;(function(){
 'use strict';
 
@@ -29305,7 +29305,7 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   }
 })()}
 },{"./BottomNavigationBar.vue":401,"./TopNavigationBar.vue":403,"umbrellajs":393,"vue":397,"vue-hot-reload-api":394,"vueify/lib/insert-css":398}],401:[function(require,module,exports){
-var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert(".bapp-bar {\n  width: 100%;\n}\n.bottom-bar {\n  position: absolute;\n  bottom: 0;\n}\n.bottom-bar-inner {\n  width: 100%;\n  margin: 0;\n}\n.bapp-bar .col-xs {\n  margin: 0;\n  padding: 0;\n}\n.bapp-bar .text-center {\n  text-align: center;\n}\n.bapp-bar a {\n  text-decoration: none;\n}")
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert(".bapp-bar {\n  width: 100%;\n}\n.bottom-bar {\n  position: fixed;\n  bottom: 0;\n  z-index: 4;\n}\n.bottom-bar-inner {\n  width: 100%;\n  margin: 0;\n}\n.bapp-bar .col-xs {\n  margin: 0;\n  padding: 0;\n}\n.bapp-bar .text-center {\n  text-align: center;\n}\n.bapp-bar a {\n  text-decoration: none;\n}")
 ;(function(){
 'use strict';
 
@@ -29349,7 +29349,7 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   }
 })()}
 },{"umbrellajs":393,"vue":397,"vue-hot-reload-api":394,"vueify/lib/insert-css":398}],402:[function(require,module,exports){
-var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("#search-field {\n  width: 100%;\n  margin-bottom: 20px;\n  margin-top: 10px;\n  color: #fff;\n  font-size: 4rem;\n  text-align: center;\n  border: none;\n}\n#search-field::-webkit-input-placeholder {\n  color: #fff;\n}\np.center-text {\n  margin-bottom: 0px;\n  margin-top: 20px;\n  text-align: center;\n}\n#menu-display {\n  max-width: 200%;\n}\n#menu-display .tile {\n  max-width: 70%;\n  margin: 0;\n}")
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("#ordertab,\n#menutab {\n  position: fixed;\n  top: 22.5%;\n  width: 50%;\n  z-index: 3;\n}\n#search-field {\n  width: 100%;\n  margin-bottom: 20px;\n  margin-top: 10px;\n  color: #fff;\n  font-size: 4rem;\n  text-align: center;\n  border: none;\n}\n#search-field::-webkit-input-placeholder {\n  color: #fff;\n}\np.center-text {\n  margin-bottom: 0px;\n  margin-top: 20px;\n  text-align: center;\n}\np.menu-price {\n  margin-bottom: 20px;\n  margin-top: 0px;\n  text-align: right;\n}\n#menu-row {\n  padding: 0;\n  margin-top: 55%;\n  margin-right: 0;\n  margin-left: 0;\n  margin-bottom: 0;\n  max-height: 60%;\n  overflow-y: scroll;\n}\n#menu-row .col-xs-12 {\n  padding: 0;\n  margin: 0;\n}\n#menu-display {\n  max-width: 200%;\n}\n#menu-display .tile {\n  max-width: 100%;\n  margin: 0;\n}\n#code-display {\n  max-width: 100%;\n  margin: 0;\n  padding: 0;\n  position: fixed;\n  top: 5.5%;\n  z-index: 3;\n}")
 ;(function(){
 'use strict';
 
@@ -29387,8 +29387,8 @@ exports.default = {
 if (module.exports.__esModule) module.exports = module.exports.default
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
-__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"home-page"},[_vm._m(0),_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-xs-12"},[_c('div',{staticClass:"box"},[_c('div',{staticClass:"tile tabs tab-menu-order"},[_c('input',{attrs:{"type":"radio","name":"tabs","id":"tab1","checked":"checked"}}),_c('div',{staticClass:"tab-label-content",attrs:{"id":"tab1-content"}},[_c('label',{attrs:{"for":"tab1"}},[_vm._v("Menu")]),_c('div',{staticClass:"tab-content",attrs:{"id":"menu-display"}},_vm._l((_vm.menu),function(menuItem){return _c('div',{staticClass:"tile"},[_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-xs-10"},[_c('div',{staticClass:"box"},[_c('p',[_vm._v(_vm._s(menuItem.name))])])]),_c('div',{staticClass:"col-xs-2"},[_c('div',{staticClass:"box"},[_c('p',{staticClass:"center-text"},[_vm._v("$"+_vm._s(menuItem.price))])])])])])}))]),_c('input',{attrs:{"type":"radio","name":"tabs","id":"tab2"}}),_vm._m(1)])])])])])}
-__vue__options__.staticRenderFns = [function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"row bg--turqoise"},[_c('div',{staticClass:"col-xs-4 col-xs-offset-4"},[_c('p',{staticClass:"center-text color--white"},[_vm._v("Enter Code")]),_c('input',{staticClass:"bg--turqoise",attrs:{"id":"search-field","type":"number","placeholder":"000","autocomplete":"off"}})])])},function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tab-label-content",attrs:{"id":"tab2-content"}},[_c('label',{attrs:{"for":"tab2"}},[_vm._v("Orders")]),_c('div',{staticClass:"tab-content"},[_c('p',[_vm._v("List of Orders")])])])}]
+__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"home-page"},[_vm._m(0),_c('div',{staticClass:"row",attrs:{"id":"menu-row"}},[_c('div',{staticClass:"col-xs-12"},[_c('div',{staticClass:"box"},[_c('div',{staticClass:"tile tabs tab-menu-order"},[_c('input',{attrs:{"type":"radio","name":"tabs","id":"tab1","checked":"checked"}}),_c('div',{staticClass:"tab-label-content",attrs:{"id":"tab1-content"}},[_c('label',{attrs:{"id":"menutab","for":"tab1"}},[_vm._v("Menu")]),_c('div',{staticClass:"tab-content",attrs:{"id":"menu-display"}},_vm._l((_vm.menu),function(menuItem){return _c('div',{staticClass:"tile"},[_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-xs-10"},[_c('div',{staticClass:"box"},[_c('p',[_vm._v(_vm._s(menuItem.name))])])]),_c('div',{staticClass:"col-xs-2"},[_c('div',{staticClass:"box"},[_c('p',{staticClass:"menu-price"},[_vm._v("$"+_vm._s(menuItem.price))])])])])])}))]),_c('input',{attrs:{"type":"radio","name":"tabs","id":"tab2"}}),_vm._m(1)])])])])])}
+__vue__options__.staticRenderFns = [function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"row bg--turqoise",attrs:{"id":"code-display"}},[_c('div',{staticClass:"col-xs-4 col-xs-offset-4"},[_c('p',{staticClass:"center-text color--white"},[_vm._v("Enter Code")]),_c('input',{staticClass:"bg--turqoise",attrs:{"id":"search-field","type":"number","placeholder":"000","autocomplete":"off"}})])])},function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tab-label-content",attrs:{"id":"tab2-content"}},[_c('label',{attrs:{"id":"ordertab","for":"tab2"}},[_vm._v("Orders")]),_c('div',{staticClass:"tab-content"},[_c('p',[_vm._v("List of Orders")])])])}]
 if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
@@ -29401,7 +29401,7 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   }
 })()}
 },{"umbrellajs":393,"vue":397,"vue-hot-reload-api":394,"vueify/lib/insert-css":398}],403:[function(require,module,exports){
-var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert(".hamburger-button {\n  padding-left: 2%;\n  padding-top: 2%;\n}\n.bapp-title {\n  margin: 0;\n  padding-top: 3%;\n}\n.bapp-title p {\n  padding-top: 3%;\n  margin: 0;\n}")
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("#topnav-container {\n  position: fixed;\n  top: 0;\n  z-index: 4;\n}\n#topnav-display {\n  max-width: 100%;\n}\n.hamburger-button {\n  padding-left: 2%;\n  padding-top: 2%;\n}\n.bapp-title {\n  margin: 0;\n  padding-top: 3%;\n}\n.bapp-title p {\n  padding-top: 3%;\n  margin: 0;\n}")
 ;(function(){
 'use strict';
 
@@ -29432,7 +29432,7 @@ if (module.exports.__esModule) module.exports = module.exports.default
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
 __vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)}
-__vue__options__.staticRenderFns = [function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('nav',{staticClass:"g-12 bapp-bar bg--midnight-blue color--white"},[_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-xs-3 hamburger-button"},[_c('button',{staticClass:"btn--flat bg--midnight-blue"},[_c('i',{staticClass:"fa fa-bars color--white bg--white"})])]),_c('div',{staticClass:"col-xs-9 bapp-title-holder"},[_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-xs-9 bapp-title"},[_c('p',{staticClass:"color--white"},[_vm._v("Heavenly Wang")])]),_c('div',{staticClass:"col-xs-3 bapp-title"},[_c('button',{staticClass:"btn--flat bg--midnight-blue"},[_c('i',{staticClass:"fa fa-search color--white"})])])])])])])}]
+__vue__options__.staticRenderFns = [function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('nav',{staticClass:"g-12 bapp-bar bg--midnight-blue color--white",attrs:{"id":"topnav-container"}},[_c('div',{staticClass:"row",attrs:{"id":"topnav-display"}},[_c('div',{staticClass:"col-xs-3 hamburger-button"},[_c('button',{staticClass:"btn--flat bg--midnight-blue"},[_c('i',{staticClass:"fa fa-bars color--white bg--white"})])]),_c('div',{staticClass:"col-xs-9 bapp-title-holder"},[_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-xs-9 bapp-title"},[_c('p',{staticClass:"color--white"},[_vm._v("Heavenly Wang")])]),_c('div',{staticClass:"col-xs-3 bapp-title"},[_c('button',{staticClass:"btn--flat bg--midnight-blue"},[_c('i',{staticClass:"fa fa-search color--white"})])])])])])])}]
 if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
@@ -29471,6 +29471,21 @@ var _menu = [{
 }, {
   id: 3,
   name: "Kopi O Hot (Regular)",
+  price: 1.60,
+  type: "Beverage"
+}, {
+  id: 4,
+  name: "Kopi O Hot (Large)",
+  price: 2.40,
+  type: "Beverage"
+}, {
+  id: 5,
+  name: "Kopi O Cold (Regular)",
+  price: 1.60,
+  type: "Beverage"
+}, {
+  id: 6,
+  name: "Teh C",
   price: 1.60,
   type: "Beverage"
 }];
@@ -29538,7 +29553,6 @@ var router = new _vueRouter2.default({
   // Routes go here.
   routes: [{ path: '/', component: _Home2.default }]
 });
-
 new _vue2.default({
   el: '#app',
   store: _store2.default,

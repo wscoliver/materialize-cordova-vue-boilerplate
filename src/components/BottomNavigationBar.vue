@@ -19,9 +19,9 @@ nav.g-12.bapp-bar.bottom-bar
 .bapp-bar
   width 100%
 .bottom-bar
-  position absolute
+  position fixed
   bottom 0
-  
+  z-index 4
 .bottom-bar-inner
   width 100%
   margin 0

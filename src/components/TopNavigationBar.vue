@@ -1,6 +1,6 @@
 <template lang="pug">
-nav.g-12.bapp-bar.bg--midnight-blue.color--white
-  .row
+nav.g-12.bapp-bar.bg--midnight-blue.color--white#topnav-container
+  .row#topnav-display
     .col-xs-3.hamburger-button
       button.btn--flat.bg--midnight-blue
         i.fa.fa-bars.color--white.bg--white
@@ -14,6 +14,12 @@ nav.g-12.bapp-bar.bg--midnight-blue.color--white
       
 </template>
 <style lang="stylus">
+#topnav-container
+  position fixed
+  top 0
+  z-index 4
+#topnav-display
+  max-width 100%
 .hamburger-button
   padding-left 2%
   padding-top 2%

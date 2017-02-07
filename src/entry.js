@@ -48,7 +48,6 @@ var router = new _vueRouter2.default({
   // Routes go here.
   routes: [{ path: '/', component: _Home2.default }]
 });
-
 new _vue2.default({
   el: '#app',
   store: _store2.default,

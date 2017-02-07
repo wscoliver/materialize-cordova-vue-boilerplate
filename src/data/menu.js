@@ -17,6 +17,24 @@ const _menu = [
     name: "Kopi O Hot (Regular)",
     price: 1.60,
     type: "Beverage"
+  },
+  {
+    id: 4,
+    name: "Kopi O Hot (Large)",
+    price: 2.40,
+    type: "Beverage"
+  },
+  {
+    id: 5,
+    name: "Kopi O Cold (Regular)",
+    price: 1.60,
+    type: "Beverage"
+  },
+  {
+    id: 6,
+    name: "Teh C",
+    price: 1.60,
+    type: "Beverage"
   }
 ]
 
