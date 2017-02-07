@@ -29238,7 +29238,7 @@ return index;
 
 })));
 },{}],400:[function(require,module,exports){
-var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("#app {\n  width: 100%;\n}")
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("#app {\n  width: 100%;\n}\n::-webkit-scrollbar {\n  width: 0px;\n  background: transparent;\n}")
 ;(function(){
 'use strict';
 
@@ -29304,8 +29304,8 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
     hotAPI.reload("data-v-fa2b538c", __vue__options__)
   }
 })()}
-},{"./BottomNavigationBar.vue":401,"./TopNavigationBar.vue":403,"umbrellajs":393,"vue":397,"vue-hot-reload-api":394,"vueify/lib/insert-css":398}],401:[function(require,module,exports){
-var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert(".bapp-bar {\n  width: 100%;\n}\n.bottom-bar {\n  position: absolute;\n  bottom: 0;\n}\n.bottom-bar-inner {\n  width: 100%;\n  margin: 0;\n}\n.bapp-bar .col-xs {\n  margin: 0;\n  padding: 0;\n}\n.bapp-bar .text-center {\n  text-align: center;\n}\n.bapp-bar a {\n  text-decoration: none;\n}")
+},{"./BottomNavigationBar.vue":401,"./TopNavigationBar.vue":405,"umbrellajs":393,"vue":397,"vue-hot-reload-api":394,"vueify/lib/insert-css":398}],401:[function(require,module,exports){
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert(".bapp-bar {\n  width: 100%;\n}\n.bottom-bar {\n  position: fixed;\n  bottom: 0;\n  z-index: 4;\n}\n.bottom-bar-inner {\n  width: 100%;\n  margin: 0;\n}\n.bapp-bar .col-xs {\n  margin: 0;\n  padding: 0;\n}\n.bapp-bar .text-center {\n  text-align: center;\n}\n.bapp-bar a {\n  text-decoration: none;\n}")
 ;(function(){
 'use strict';
 
@@ -29335,7 +29335,7 @@ exports.default = {
 if (module.exports.__esModule) module.exports = module.exports.default
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
-__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('nav',{staticClass:"g-12 bapp-bar bottom-bar"},[_c('div',{staticClass:"row bottom-bar-inner"},[_c('div',{staticClass:"col-xs"},[_c('div',{staticClass:"tile text-center"},[_c('router-link',{attrs:{"to":"/menu"}},[_c('i',{staticClass:"fa fa-cutlery color--midnight-blue"})])],1)]),_c('div',{staticClass:"col-xs"},[_c('div',{staticClass:"tile text-center"},[_c('router-link',{attrs:{"to":"/payment"}},[_c('i',{staticClass:"fa fa-credit-card color--midnight-blue"})])],1)]),_c('div',{staticClass:"col-xs"},[_c('div',{staticClass:"tile text-center"},[_c('router-link',{attrs:{"to":"/history"}},[_c('i',{staticClass:"fa fa-history color--midnight-blue"})])],1)])])])}
+__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('nav',{staticClass:"g-12 bapp-bar bottom-bar"},[_c('div',{staticClass:"row bottom-bar-inner"},[_c('div',{staticClass:"col-xs"},[_c('div',{staticClass:"tile text-center"},[_c('router-link',{attrs:{"to":"/"}},[_c('i',{staticClass:"fa fa-cutlery color--midnight-blue"})])],1)]),_c('div',{staticClass:"col-xs"},[_c('div',{staticClass:"tile text-center"},[_c('router-link',{attrs:{"to":"/payment"}},[_c('i',{staticClass:"fa fa-credit-card color--midnight-blue"})])],1)]),_c('div',{staticClass:"col-xs"},[_c('div',{staticClass:"tile text-center"},[_c('router-link',{attrs:{"to":"/history"}},[_c('i',{staticClass:"fa fa-history color--midnight-blue"})])],1)])])])}
 __vue__options__.staticRenderFns = []
 if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
@@ -29349,7 +29349,7 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   }
 })()}
 },{"umbrellajs":393,"vue":397,"vue-hot-reload-api":394,"vueify/lib/insert-css":398}],402:[function(require,module,exports){
-var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("#search-field {\n  width: 100%;\n  margin-bottom: 20px;\n  margin-top: 10px;\n  color: #fff;\n  font-size: 4rem;\n  text-align: center;\n  border: none;\n}\n#search-field::-webkit-input-placeholder {\n  color: #fff;\n}\np.center-text {\n  margin-bottom: 0px;\n  margin-top: 20px;\n  text-align: center;\n}\n#menu-display {\n  max-height: 70%;\n  overflow-y: scroll;\n  overflow-x: hidden;\n}\n#menu-display .tile {\n  max-width: 70%;\n}")
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("#ordertab,\n#menutab {\n  position: fixed;\n  top: 26%;\n  width: 50%;\n  z-index: 3;\n}\n#search-field {\n  width: 100%;\n  margin-bottom: 20px;\n  margin-top: 10px;\n  color: #fff;\n  font-size: 3.5rem;\n  text-align: center;\n  border: none;\n}\n#search-field::-webkit-input-placeholder {\n  color: #fff;\n}\np.center-text {\n  margin-bottom: 0px;\n  margin-top: 20px;\n  text-align: center;\n}\np.menu-price {\n  margin-bottom: 20px;\n  margin-top: 0px;\n  text-align: right;\n}\n#menu-row {\n  padding: 0;\n  margin-top: 55%;\n  margin-right: 0;\n  margin-left: 0;\n  margin-bottom: 0;\n  max-height: 60%;\n  overflow-y: scroll;\n}\n#menu-row .col-xs-12 {\n  padding: 0;\n  margin: 0;\n}\n#menu-display,\n#order-display {\n  max-width: 200%;\n}\n#menu-display .tile {\n  max-width: 100%;\n  margin: 0;\n}\n#code-display {\n  max-width: 100%;\n  margin: 0;\n  padding-top: 0;\n  padding-bottom: 10%;\n  padding-right: 0;\n  padding-left: 0;\n  position: fixed;\n  top: 5.5%;\n  z-index: 3;\n}")
 ;(function(){
 'use strict';
 
@@ -29361,6 +29361,14 @@ var _umbrellajs = require('umbrellajs');
 
 var _umbrellajs2 = _interopRequireDefault(_umbrellajs);
 
+var _MenuItem = require('./MenuItem.vue');
+
+var _MenuItem2 = _interopRequireDefault(_MenuItem);
+
+var _Orders = require('./Orders.vue');
+
+var _Orders2 = _interopRequireDefault(_Orders);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = {
@@ -29368,9 +29376,16 @@ exports.default = {
     return {};
   },
 
+  components: {
+    'menu-item': _MenuItem2.default,
+    'order-item': _Orders2.default
+  },
   computed: {
     menu: function menu() {
       return this.$store.getters.getMenu;
+    },
+    orders: function orders() {
+      return this.$store.getters.getOrders;
     }
   },
   mounted: function mounted() {
@@ -29387,8 +29402,8 @@ exports.default = {
 if (module.exports.__esModule) module.exports = module.exports.default
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
-__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"home-page"},[_vm._m(0),_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-xs-12"},[_c('div',{staticClass:"box"},[_c('div',{staticClass:"tile tabs tab-menu-order"},[_c('input',{attrs:{"type":"radio","name":"tabs","id":"tab1","checked":"checked"}}),_c('div',{staticClass:"tab-label-content",attrs:{"id":"tab1-content"}},[_c('label',{attrs:{"for":"tab1"}},[_vm._v("Menu")]),_c('div',{staticClass:"tab-content",attrs:{"id":"menu-display"}},_vm._l((_vm.menu),function(menuItem){return _c('div',{staticClass:"tile"},[_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-xs-10"},[_c('div',{staticClass:"box"},[_c('p',[_vm._v(_vm._s(menuItem.name))])])]),_c('div',{staticClass:"col-xs-2"},[_c('div',{staticClass:"box"},[_c('p',{staticClass:"center-text"},[_vm._v("$"+_vm._s(menuItem.price))])])])])])}))]),_c('input',{attrs:{"type":"radio","name":"tabs","id":"tab2"}}),_vm._m(1)])])])])])}
-__vue__options__.staticRenderFns = [function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"row bg--turqoise"},[_c('div',{staticClass:"col-xs-4 col-xs-offset-4"},[_c('p',{staticClass:"center-text color--white"},[_vm._v("Enter Code")]),_c('input',{staticClass:"bg--turqoise",attrs:{"id":"search-field","type":"number","placeholder":"000","autocomplete":"off"}})])])},function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tab-label-content",attrs:{"id":"tab2-content"}},[_c('label',{attrs:{"for":"tab2"}},[_vm._v("Orders")]),_c('div',{staticClass:"tab-content"},[_c('p',[_vm._v("List of Orders")])])])}]
+__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"home-page"},[_vm._m(0),_c('div',{staticClass:"row",attrs:{"id":"menu-row"}},[_c('div',{staticClass:"col-xs-12"},[_c('div',{staticClass:"box"},[_c('div',{staticClass:"tile tabs tab-menu-order"},[_c('input',{attrs:{"type":"radio","name":"tabs","id":"tab1","checked":"checked"}}),_c('div',{staticClass:"tab-label-content",attrs:{"id":"tab1-content"}},[_c('label',{attrs:{"id":"menutab","for":"tab1"}},[_vm._v("Menu")]),_c('div',{staticClass:"tab-content",attrs:{"id":"menu-display"}},_vm._l((_vm.menu),function(menuItem){return _c('menu-item',{attrs:{"menuitem":menuItem}})}))]),_c('input',{attrs:{"type":"radio","name":"tabs","id":"tab2"}}),_c('div',{staticClass:"tab-label-content",attrs:{"id":"tab2-content"}},[_c('label',{attrs:{"id":"ordertab","for":"tab2"}},[_vm._v("Orders ")]),_c('div',{staticClass:"tab-content",attrs:{"id":"order-display"}},[_c('br'),_vm._l((_vm.orders),function(order){return _c('order-item',{attrs:{"orderitem":order,"menu":_vm.menu}})})],2)])])])])])])}
+__vue__options__.staticRenderFns = [function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"row bg--turqoise",attrs:{"id":"code-display"}},[_c('div',{staticClass:"col-xs-4 col-xs-offset-4"},[_c('p',{staticClass:"center-text color--white"},[_vm._v("Enter Code")]),_c('input',{staticClass:"bg--turqoise",attrs:{"id":"search-field","type":"number","placeholder":"000","autocomplete":"off"}})])])}]
 if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
@@ -29400,8 +29415,144 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
     hotAPI.reload("data-v-7a6a3e16", __vue__options__)
   }
 })()}
-},{"umbrellajs":393,"vue":397,"vue-hot-reload-api":394,"vueify/lib/insert-css":398}],403:[function(require,module,exports){
-var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert(".hamburger-button {\n  padding-left: 2%;\n  padding-top: 2%;\n}\n.bapp-title {\n  margin: 0;\n  padding-top: 3%;\n}\n.bapp-title p {\n  padding-top: 3%;\n  margin: 0;\n}")
+},{"./MenuItem.vue":403,"./Orders.vue":404,"umbrellajs":393,"vue":397,"vue-hot-reload-api":394,"vueify/lib/insert-css":398}],403:[function(require,module,exports){
+;(function(){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _hammerjs = require('hammerjs');
+
+var _hammerjs2 = _interopRequireDefault(_hammerjs);
+
+var _umbrellajs = require('umbrellajs');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = {
+  data: function data() {
+    return {};
+  },
+
+  computed: {},
+  props: ['menuitem'],
+  mounted: function mounted() {
+    this.$nextTick(this.loaded);
+  },
+
+  methods: {
+    loaded: function loaded() {
+      var menuItem = (0, _umbrellajs.u)(".row[menuid='" + this.menuitem.id + "']").nodes[0];
+      var hammer = new _hammerjs2.default(menuItem);
+      hammer.on('swipe', this.onSwipe);
+    },
+    onSwipe: function onSwipe(evt) {
+      var msg = this.menuitem.name + " was added to Orders.";
+      if (navigator.notification) {
+        navigator.notification.alert(msg, null, 'Order Confirmation', 'Ok');
+      } else {
+        alert(msg);
+      }
+      this.$store.dispatch('addToOrder', this.menuitem.id);
+    }
+  }
+};
+})()
+if (module.exports.__esModule) module.exports = module.exports.default
+var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
+if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
+__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tile"},[_c('div',{staticClass:"row",attrs:{"menuid":_vm.menuitem.id}},[_c('div',{staticClass:"col-xs-2"},[_c('div',{staticClass:"box"},[_c('p',[_vm._v(_vm._s((_vm.menuitem.id)))])])]),_c('div',{staticClass:"col-xs-8"},[_c('div',{staticClass:"box"},[_c('p',[_vm._v(_vm._s(_vm.menuitem.name))])])]),_c('div',{staticClass:"col-xs-2"},[_c('div',{staticClass:"box"},[_c('p',{staticClass:"menu-price"},[_vm._v("$"+_vm._s(_vm.menuitem.price))])])])])])}
+__vue__options__.staticRenderFns = []
+if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-c2cfe56e", __vue__options__)
+  } else {
+    hotAPI.reload("data-v-c2cfe56e", __vue__options__)
+  }
+})()}
+},{"hammerjs":390,"umbrellajs":393,"vue":397,"vue-hot-reload-api":394}],404:[function(require,module,exports){
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert(".tile.orderitem {\n  max-width: 100%;\n  padding: 0;\n}\nbutton.plusbtn.btn--flat {\n  padding-left: 15px;\n  padding-right: 15px;\n}\nbutton.minusbtn.btn--flat {\n  margin-left: 5px;\n  padding-left: 15px;\n  padding-right: 15px;\n}")
+;(function(){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _hammerjs = require('hammerjs');
+
+var _hammerjs2 = _interopRequireDefault(_hammerjs);
+
+var _umbrellajs = require('umbrellajs');
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = {
+  data: function data() {
+    return {};
+  },
+
+  computed: {
+    menuitem: function menuitem() {
+      var needle = this.orderitem.id;
+      var target = this.menu.find(function (p) {
+        return p.id === needle;
+      });
+      return target;
+    }
+  },
+  props: ['menu', 'orderitem'],
+  mounted: function mounted() {
+    this.$nextTick(this.loaded);
+  },
+
+  methods: {
+    loaded: function loaded() {
+      var selectorAdd = (0, _umbrellajs.u)("button[addorder='" + this.orderitem.id + "']").nodes;
+      if (selectorAdd.length > 0) {
+        var refItem = selectorAdd[0];
+        var hammer = new _hammerjs2.default(refItem);
+        hammer.on('tap', this.tapAddOrder);
+      }
+      var selectorRemove = (0, _umbrellajs.u)("button[removeorder='" + this.orderitem.id + "']").nodes;
+      if (selectorRemove.length > 0) {
+        var _refItem = selectorRemove[0];
+        var _hammer = new _hammerjs2.default(_refItem);
+        _hammer.on('tap', this.tapRemoveOrder);
+      }
+    },
+    tapAddOrder: function tapAddOrder(evt) {
+      this.$store.dispatch('addToOrder', this.orderitem.id);
+    },
+    tapRemoveOrder: function tapRemoveOrder(evt) {
+      this.$store.dispatch('removeFromOrder', this.orderitem.id);
+    }
+  }
+};
+})()
+if (module.exports.__esModule) module.exports = module.exports.default
+var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
+if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
+__vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"tile orderitem"},[_c('div',{staticClass:"row",attrs:{"orderid":_vm.orderitem.id}},[_c('div',{staticClass:"col-xs-4"},[_c('div',{staticClass:"box"},[_c('p',[_vm._v(_vm._s(_vm.menuitem.name))])])]),_c('div',{staticClass:"col-xs-4"},[_c('div',{staticClass:"box"},[_c('p',{staticClass:"menu-price"},[_vm._v(_vm._s(_vm.orderitem.quantity)+"  x $ "+_vm._s(_vm.menuitem.price)+" ")])])]),_c('div',{staticClass:"col-xs-4"},[_c('div',{staticClass:"box"},[_c('button',{staticClass:"plusbtn btn--flat bg--midnight-blue color--white",attrs:{"addorder":_vm.orderitem.id}},[_vm._v("+")]),_c('button',{staticClass:"minusbtn btn--flat bg--red color--white",attrs:{"removeorder":_vm.orderitem.id}},[_vm._v("-")])])])])])}
+__vue__options__.staticRenderFns = []
+if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
+  hotAPI.install(require("vue"), true)
+  if (!hotAPI.compatible) return
+  module.hot.accept()
+  module.hot.dispose(__vueify_style_dispose__)
+  if (!module.hot.data) {
+    hotAPI.createRecord("data-v-7f11a548", __vue__options__)
+  } else {
+    hotAPI.reload("data-v-7f11a548", __vue__options__)
+  }
+})()}
+},{"hammerjs":390,"umbrellajs":393,"vue":397,"vue-hot-reload-api":394,"vueify/lib/insert-css":398}],405:[function(require,module,exports){
+var __vueify_style_dispose__ = require("vueify/lib/insert-css").insert("#topnav-container {\n  position: fixed;\n  top: 0;\n  z-index: 4;\n}\n#topnav-display {\n  max-width: 100%;\n}\n.hamburger-button {\n  padding-left: 2%;\n  padding-top: 2%;\n}\n.bapp-title {\n  margin: 0;\n  padding-top: 3%;\n}\n.bapp-title p {\n  padding-top: 3%;\n  margin: 0;\n}")
 ;(function(){
 'use strict';
 
@@ -29432,7 +29583,7 @@ if (module.exports.__esModule) module.exports = module.exports.default
 var __vue__options__ = (typeof module.exports === "function"? module.exports.options: module.exports)
 if (__vue__options__.functional) {console.error("[vueify] functional components are not supported and should be defined in plain js files using render functions.")}
 __vue__options__.render = function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _vm._m(0)}
-__vue__options__.staticRenderFns = [function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('nav',{staticClass:"g-12 bapp-bar bg--midnight-blue color--white"},[_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-xs-3 hamburger-button"},[_c('button',{staticClass:"btn--flat bg--midnight-blue"},[_c('i',{staticClass:"fa fa-bars color--white bg--white"})])]),_c('div',{staticClass:"col-xs-9 bapp-title-holder"},[_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-xs-9 bapp-title"},[_c('p',{staticClass:"color--white"},[_vm._v("Heavenly Wang")])]),_c('div',{staticClass:"col-xs-3 bapp-title"},[_c('button',{staticClass:"btn--flat bg--midnight-blue"},[_c('i',{staticClass:"fa fa-search color--white"})])])])])])])}]
+__vue__options__.staticRenderFns = [function render () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('nav',{staticClass:"g-12 bapp-bar bg--midnight-blue color--white",attrs:{"id":"topnav-container"}},[_c('div',{staticClass:"row",attrs:{"id":"topnav-display"}},[_c('div',{staticClass:"col-xs-3 hamburger-button"},[_c('button',{staticClass:"btn--flat bg--midnight-blue"},[_c('i',{staticClass:"fa fa-bars color--white bg--white"})])]),_c('div',{staticClass:"col-xs-9 bapp-title-holder"},[_c('div',{staticClass:"row"},[_c('div',{staticClass:"col-xs-9 bapp-title"},[_c('p',{staticClass:"color--white"},[_vm._v("Heavenly Wang")])]),_c('div',{staticClass:"col-xs-3 bapp-title"},[_c('button',{staticClass:"btn--flat bg--midnight-blue"},[_c('i',{staticClass:"fa fa-search color--white"})])])])])])])}]
 if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
   hotAPI.install(require("vue"), true)
   if (!hotAPI.compatible) return
@@ -29444,7 +29595,7 @@ if (module.hot) {(function () {  var hotAPI = require("vue-hot-reload-api")
     hotAPI.reload("data-v-56b45741", __vue__options__)
   }
 })()}
-},{"umbrellajs":393,"vue":397,"vue-hot-reload-api":394,"vueify/lib/insert-css":398}],404:[function(require,module,exports){
+},{"umbrellajs":393,"vue":397,"vue-hot-reload-api":394,"vueify/lib/insert-css":398}],406:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -29473,6 +29624,21 @@ var _menu = [{
   name: "Kopi O Hot (Regular)",
   price: 1.60,
   type: "Beverage"
+}, {
+  id: 4,
+  name: "Kopi O Hot (Large)",
+  price: 2.40,
+  type: "Beverage"
+}, {
+  id: 5,
+  name: "Kopi O Cold (Regular)",
+  price: 1.60,
+  type: "Beverage"
+}, {
+  id: 6,
+  name: "Teh C",
+  price: 1.60,
+  type: "Beverage"
 }];
 
 exports.default = {
@@ -29485,7 +29651,7 @@ exports.default = {
   }
 };
 
-},{"babel-runtime/core-js/promise":28}],405:[function(require,module,exports){
+},{"babel-runtime/core-js/promise":28}],407:[function(require,module,exports){
 'use strict';
 
 require('babel-polyfill');
@@ -29538,7 +29704,6 @@ var router = new _vueRouter2.default({
   // Routes go here.
   routes: [{ path: '/', component: _Home2.default }]
 });
-
 new _vue2.default({
   el: '#app',
   store: _store2.default,
@@ -29549,13 +29714,13 @@ new _vue2.default({
 });
 
 
-},{"./components/App.vue":400,"./components/Home.vue":402,"./store":408,"axios":1,"babel-polyfill":26,"hammerjs":390,"vue-router":395,"vue/dist/vue.js":396}],406:[function(require,module,exports){
+},{"./components/App.vue":400,"./components/Home.vue":402,"./store":410,"axios":1,"babel-polyfill":26,"hammerjs":390,"vue-router":395,"vue/dist/vue.js":396}],408:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.getMenu = exports.setPageTitle = undefined;
+exports.removeFromOrder = exports.addToOrder = exports.getMenu = exports.setPageTitle = undefined;
 
 var _mutationTypes = require('./mutation-types');
 
@@ -29582,7 +29747,18 @@ var getMenu = exports.getMenu = function getMenu(_ref2) {
   });
 };
 
-},{"../data/menu.js":404,"./mutation-types":412}],407:[function(require,module,exports){
+var addToOrder = exports.addToOrder = function addToOrder(_ref3, menuId) {
+  var commit = _ref3.commit;
+
+  commit(types.ADD_TO_ORDER, { id: menuId });
+};
+var removeFromOrder = exports.removeFromOrder = function removeFromOrder(_ref4, menuId) {
+  var commit = _ref4.commit;
+
+  commit(types.REMOVE_FROM_ORDER, { id: menuId });
+};
+
+},{"../data/menu.js":406,"./mutation-types":415}],409:[function(require,module,exports){
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -29594,8 +29770,11 @@ var getPageTitle = exports.getPageTitle = function getPageTitle(state) {
 var getMenu = exports.getMenu = function getMenu(state) {
   return state.products.menu;
 };
+var getOrders = exports.getOrders = function getOrders(state) {
+  return state.orders.all;
+};
 
-},{}],408:[function(require,module,exports){
+},{}],410:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -29630,23 +29809,30 @@ var _products = require('./modules/products');
 
 var _products2 = _interopRequireDefault(_products);
 
+var _orders = require('./modules/orders');
+
+var _orders2 = _interopRequireDefault(_orders);
+
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_vue2.default.use(_vuex2.default); // store/index.js
+// store/index.js
+_vue2.default.use(_vuex2.default);
+
 exports.default = new _vuex2.default.Store({
   actions: actions,
   getters: getters,
   modules: {
     auth: _auth2.default,
     navigation: _navigation2.default,
-    products: _products2.default
+    products: _products2.default,
+    orders: _orders2.default
   },
   strict: true
 });
 
-},{"./actions":406,"./getters":407,"./modules/auth":409,"./modules/navigation":410,"./modules/products":411,"vue/dist/vue.js":396,"vuex":399}],409:[function(require,module,exports){
+},{"./actions":408,"./getters":409,"./modules/auth":411,"./modules/navigation":412,"./modules/orders":413,"./modules/products":414,"vue/dist/vue.js":396,"vuex":399}],411:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -29674,7 +29860,7 @@ exports.default = {
   mutations: mutations
 };
 
-},{"../mutation-types":412}],410:[function(require,module,exports){
+},{"../mutation-types":415}],412:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -29712,7 +29898,69 @@ exports.default = {
   mutations: mutations
 };
 
-},{"../mutation-types":412,"babel-runtime/helpers/defineProperty":29}],411:[function(require,module,exports){
+},{"../mutation-types":415,"babel-runtime/helpers/defineProperty":29}],413:[function(require,module,exports){
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _defineProperty2 = require('babel-runtime/helpers/defineProperty');
+
+var _defineProperty3 = _interopRequireDefault(_defineProperty2);
+
+var _mutations; // store/modules/products.js
+
+
+var _mutationTypes = require('../mutation-types');
+
+var types = _interopRequireWildcard(_mutationTypes);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// State Code here.
+var state = {
+  all: []
+};
+
+// Mutation Code here.
+var mutations = (_mutations = {}, (0, _defineProperty3.default)(_mutations, types.ADD_TO_ORDER, function (state, _ref) {
+  var id = _ref.id;
+
+  var record = state.all.find(function (p) {
+    return parseInt(p.id) === parseInt(id);
+  });
+  if (!record) {
+    state.all.push({
+      id: id,
+      quantity: 1
+    });
+  } else {
+    record.quantity++;
+  }
+}), (0, _defineProperty3.default)(_mutations, types.REMOVE_FROM_ORDER, function (state, _ref2) {
+  var id = _ref2.id;
+
+  var record = state.all.find(function (p) {
+    return parseInt(p.id) === parseInt(id);
+  });
+  if (record.quantity == 1) {
+    state.all = state.all.filter(function (p) {
+      return parseInt(p.id) !== parseInt(id);
+    });
+  } else {
+    record.quantity--;
+  }
+}), _mutations);
+
+exports.default = {
+  state: state,
+  mutations: mutations
+};
+
+},{"../mutation-types":415,"babel-runtime/helpers/defineProperty":29}],414:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -29749,7 +29997,7 @@ exports.default = {
   mutations: mutations
 };
 
-},{"../mutation-types":412,"babel-runtime/helpers/defineProperty":29}],412:[function(require,module,exports){
+},{"../mutation-types":415,"babel-runtime/helpers/defineProperty":29}],415:[function(require,module,exports){
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -29760,5 +30008,7 @@ var SET_PAGE_TITLE = exports.SET_PAGE_TITLE = 'SET_PAGE_TITLE';
 var AUTH_LOGIN = exports.AUTH_LOGIN = 'AUTH_LOGIN';
 var AUTH_LOGOUT = exports.AUTH_LOGOUT = 'AUTH_LOGOUT';
 var RECEIVE_MENU = exports.RECEIVE_MENU = 'RECEIVE_MENU';
+var ADD_TO_ORDER = exports.ADD_TO_ORDER = 'ADD_TO_ORDER';
+var REMOVE_FROM_ORDER = exports.REMOVE_FROM_ORDER = 'REMOVE_FROM_ORDER';
 
-},{}]},{},[405]);
+},{}]},{},[407]);

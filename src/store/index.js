@@ -7,6 +7,7 @@ import * as getters from './getters'
 import auth from './modules/auth'
 import navigation from './modules/navigation'
 import products from './modules/products'
+import orders from './modules/orders'
 
 Vue.use(Vuex)
 
@@ -16,7 +17,8 @@ export default new Vuex.Store({
   modules: {
     auth,
     navigation,
-    products
+    products,
+    orders
   },
   strict: true
 })

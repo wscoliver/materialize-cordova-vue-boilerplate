@@ -3,7 +3,7 @@ nav.g-12.bapp-bar.bottom-bar
   .row.bottom-bar-inner
     .col-xs
       .tile.text-center
-        router-link(to="/menu")
+        router-link(to="/")
           i.fa.fa-cutlery.color--midnight-blue
     .col-xs
       .tile.text-center

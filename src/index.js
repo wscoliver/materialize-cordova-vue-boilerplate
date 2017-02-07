@@ -9,11 +9,11 @@ import App from './components/App.vue'
 import Home from './components/Home.vue'
 // State Management with Vuex
 import store from './store'
-import hammer from 'hammerjs'
+import Hammer from 'hammerjs'
 
 Vue.use(VueRouter)
 Vue.prototype.$http = axios
-Vue.prototype.$touch = hammer
+Vue.prototype.$touch = Hammer
 
 let router = new VueRouter({
   mode: 'history',
