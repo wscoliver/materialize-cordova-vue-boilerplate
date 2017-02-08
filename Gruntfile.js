@@ -22,14 +22,14 @@ module.exports = function(grunt){
           }
         },
         files: {
-          'boilerplate/www/index.html': ['src/app.pug']
+          'dist/index.html': ['src/app.pug']
         }
       }
     },
     browserify: {
       dist:{
         files: {
-          './boilerplate/www/js/bundle.js': ['src/entry.js'],
+          'dist/js/bundle.js': ['src/entry.js'],
         },
         options: {
           transform: [
@@ -46,7 +46,7 @@ module.exports = function(grunt){
     uglify: {
       compile: {
         files: {
-          './boilerplate/www/js/bundle.min.js': ['./boilerplate/www/js/bundle.js']
+          'dist/js/bundle.min.js': ['dist/js/bundle.js']
         }
       }
     },
